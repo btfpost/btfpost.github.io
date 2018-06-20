@@ -8,3 +8,8 @@ xhr.onreadystatechange = function(){
 	console.log(xhr.status);
 	console.log(xhr.statusText);
 }
+xhr.onload = function (){
+	
+	var myStuff = JSON.parse(xhr.responseText);
+	console.log(myStuff);
+}
