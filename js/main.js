@@ -1,6 +1,8 @@
 
-var Data1= '{"first":"Anna", "last":"Chernova", "city":"Cincinnati"}';
-var Data = JSON.parse(Data1);
-console.log(Data);
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'data.json', true);
+xhr.send();
 
-document.getElementById('message').innerHTML=Data.city;
+xhr.onreadystatechange = function(){
+	console.log(xhr.readyState);
+}
