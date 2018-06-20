@@ -1,6 +1,6 @@
 
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'data.json', true);
+xhr.open('GET', 'data2.json', true);
 xhr.send();
 
 xhr.onreadystatechange = function(){
