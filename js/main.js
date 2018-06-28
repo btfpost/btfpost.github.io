@@ -17,8 +17,8 @@ function loadWeather(){
 	
 	
 	
-	var condidtionPath = "http://api.apixu.com/v1/current.json?key=3da912dcc42a488aac6195535182006&q="+zip+"";
-	var forecastPath= "http://api.apixu.com/v1/forecast.json?key=3da912dcc42a488aac6195535182006&q="+zip+"&days=7";	
+	var condidtionPath = "https://api.apixu.com/v1/current.json?key=3da912dcc42a488aac6195535182006&q="+zip+"";
+	var forecastPath= "https://api.apixu.com/v1/forecast.json?key=3da912dcc42a488aac6195535182006&q="+zip+"&days=7";	
 	
 	weatherConditions.open('GET', condidtionPath, true);
 	weatherConditions.responseType = 'text';
